@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TutorialToken - Wallet</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Raze Test</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="petsRow" class="row">
+        <div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">My Wallet</h3>
+            </div>
+            <div class="panel-body">
+              <!--<input type="text" class="form-control" id="TTTransferAmount" placeholder="Amount" />-->
+              <h2>Native Coin</h2>
+              <p><button class="btn btn-primary" id="initETHButton" type="button">Init</button></p>
+              <p><button class="btn btn-primary" id="registerETHButton" type="button">Register</button></p>
+              <p><button class="btn btn-primary" id="depositETHButton" type="button">Deposit</button></p>
+              <p><button class="btn btn-primary" id="withdrawETHButton" type="button">Withdraw</button></p>
+              Receiver: <input type="text" class="form-control" id="TransferRazeETHAddress" placeholder="Raze Address" />
+              Decoys: <input type="text" class="form-control" id="TransferRazeETHDecoys" placeholder="(Decoys) Raze Addresses" />
+              <p><button class="btn btn-primary" id="transferETHButton" type="button">Transfer</button></p>
+              <p><button class="btn btn-primary" id="balanceETHButton" type="button">Balance</button></p>
+              <p><button class="btn btn-primary" id="addressETHButton" type="button">Raze Address</button></p>
+              <p></p>
+              <h2>ERC20 Token</h2>
+              <p><button class="btn btn-primary" id="mintERC20Button" type="button">Mint</button></p>
+              <p><button class="btn btn-primary" id="initERC20Button" type="button">Init</button></p>
+              <p><button class="btn btn-primary" id="registerERC20Button" type="button">Register</button></p>
+              <p><button class="btn btn-primary" id="depositERC20Button" type="button">Deposit</button></p>
+              <p><button class="btn btn-primary" id="withdrawERC20Button" type="button">Withdraw</button></p>
+              Receiver: <input type="text" class="form-control" id="TransferRazeERC20Address" placeholder="Raze Address" />
+              Decoys: <input type="text" class="form-control" id="TransferRazeERC20Decoys" placeholder="(Decoys) Raze Addresses" />
+              <p><button class="btn btn-primary" id="transferERC20Button" type="button">Transfer</button></p>
+              <p><button class="btn btn-primary" id="balanceERC20Button" type="button">Balance</button></p>
+              <p><button class="btn btn-primary" id="addressERC20Button" type="button">Raze Address</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/raze.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
